@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class DamageLevel : MonoBehaviour
 {
-    public int level;
+    public string levelDamage;
 
     private int damageNum;
     // Start is called before the first frame update
@@ -18,4 +18,15 @@ public class DamageLevel : MonoBehaviour
     {
         
     }
+
+    public void takeDamage(int num){
+        damageNum = damageNum + num;
+    }
+
+    void OnDestroy(){
+        damageNum = damageNum + PlayerPrefs.GetInt(levelDamage, 0);
+        Debug.Log("Damage in zone " + levelDamage + ": " + damageNum);
+        PlayerPrefs.SetInt(levelDamage, damageNum);
+    }
+
 }
