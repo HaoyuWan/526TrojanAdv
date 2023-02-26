@@ -2602,6 +2602,11 @@ PrefabInstance:
     - target: {fileID: 82497150233793414, guid: c57359a20b483084f9310f1d0b46f64a,
         type: 3}
       propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 82734740426815608, guid: c57359a20b483084f9310f1d0b46f64a,
+        type: 3}
+      propertyPath: m_Volume
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 82734740426815608, guid: c57359a20b483084f9310f1d0b46f64a,
@@ -9313,6 +9318,16 @@ PrefabInstance:
     - target: {fileID: 4743000984438972, guid: c57359a20b483084f9310f1d0b46f64a, type: 3}
       propertyPath: m_LocalPosition.y
       value: 1.2705
+      objectReference: {fileID: 0}
+    - target: {fileID: 60369709880363736, guid: c57359a20b483084f9310f1d0b46f64a,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 3.24
+      objectReference: {fileID: 0}
+    - target: {fileID: 60369709880363736, guid: c57359a20b483084f9310f1d0b46f64a,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 4.32
       objectReference: {fileID: 0}
     - target: {fileID: 82497150233793414, guid: c57359a20b483084f9310f1d0b46f64a,
         type: 3}
@@ -20134,13 +20149,13 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1475300397}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 243206977951782310, guid: 74cb2eead3628fa47a369c51a45d99a1,
     type: 2}
   m_audioClip: {fileID: 8300000, guid: 88b4c1455b93da647be238d44b98186e, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0
   m_Pitch: 1
   Loop: 0
   Mute: 0
