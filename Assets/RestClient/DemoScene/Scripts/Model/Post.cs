@@ -11,6 +11,8 @@ namespace Models
 
 		public string title;
 
+		public int level;
+
 		public string body;
 
 		public override string ToString(){
