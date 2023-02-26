@@ -36,7 +36,7 @@ namespace Gamekit2D
             var spriteRender = transform.GetComponent<SpriteRenderer>();
             if (spriteRender)
                 flip = spriteRender.flipX;
-            VFXController.Instance.Trigger(vfxName, offset, startDelay, flip, attachToParent ? transform : null);
+            //VFXController.Instance.Trigger(vfxName, offset, startDelay, flip, attachToParent ? transform : null);
         }
 
     }
