@@ -36,6 +36,11 @@ public class FireBasePost : MonoBehaviour
         myRestClienMessager.Post("Damage", PlayerPrefs.GetInt("Zone3", 0) + "", 3);
         myRestClienMessager.Post("Damage", PlayerPrefs.GetInt("Zone4", 0) + "", 4);
         
+        myRestClienMessager.Post("Death", PlayerPrefs.GetInt("Zone1", 0) + "", 1);
+        myRestClienMessager.Post("Death", PlayerPrefs.GetInt("Zone2", 0) + "", 2);
+        myRestClienMessager.Post("Death", PlayerPrefs.GetInt("Zone3", 0) + "", 3);
+        myRestClienMessager.Post("Death", PlayerPrefs.GetInt("Zone4", 0) + "", 4);
+
 
     }
 }

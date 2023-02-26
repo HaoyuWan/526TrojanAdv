@@ -18,7 +18,7 @@ namespace Gamekit2D
         public class HealEvent : UnityEvent<int, Damageable>
         { }
 
-
+        public DeathRecord myDeathRecord;
         public DamageLevel myDamage;
         public int startingHealth = 5;
         public bool invulnerableAfterDamage = true;
@@ -46,6 +46,7 @@ namespace Gamekit2D
 
         void Start(){
             myDamage = GetComponent<DamageLevel>();
+            myDeathRecord = GetComponent<DeathRecord>();
         }
 
         void OnEnable()
@@ -116,6 +117,9 @@ namespace Gamekit2D
 
             if (m_CurrentHealth <= 0)
             {
+                if(myDeathRecord != null){
+                    myDeathRecord.takeDeath();
+                }
                 OnDie.Invoke(damager, this);
                 m_ResetHealthOnSceneReload = true;
                 EnableInvulnerability();
