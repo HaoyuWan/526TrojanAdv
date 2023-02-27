@@ -17,7 +17,8 @@ namespace Gamekit2D
         [Serializable]
         public class HealEvent : UnityEvent<int, Damageable>
         { }
-
+        
+        public EnemyKilled myKilled;
         public DeathRecord myDeathRecord;
         public DamageLevel myDamage;
         public int startingHealth = 5;
@@ -47,6 +48,7 @@ namespace Gamekit2D
         void Start(){
             myDamage = GetComponent<DamageLevel>();
             myDeathRecord = GetComponent<DeathRecord>();
+            myKilled = GetComponent<EnemyKilled>();
         }
 
         void OnEnable()
@@ -119,6 +121,9 @@ namespace Gamekit2D
             {
                 if(myDeathRecord != null){
                     myDeathRecord.takeDeath();
+                }
+                if(myKilled != null){
+                    myKilled.takeDeath();
                 }
                 OnDie.Invoke(damager, this);
                 m_ResetHealthOnSceneReload = true;

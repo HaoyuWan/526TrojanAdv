@@ -31,15 +31,24 @@ public class FireBasePost : MonoBehaviour
         myRestClienMessager.Post("Time", PlayerPrefs.GetFloat("Zone3", 0) + "", 3);
         myRestClienMessager.Post("Time", PlayerPrefs.GetFloat("Zone4", 0) + "", 4);
 
-        myRestClienMessager.Post("Damage", PlayerPrefs.GetInt("Zone1", 0) + "", 1);
-        myRestClienMessager.Post("Damage", PlayerPrefs.GetInt("Zone2", 0) + "", 2);
-        myRestClienMessager.Post("Damage", PlayerPrefs.GetInt("Zone3", 0) + "", 3);
-        myRestClienMessager.Post("Damage", PlayerPrefs.GetInt("Zone4", 0) + "", 4);
+        myRestClienMessager.Post("Damage", PlayerPrefs.GetInt("Damage1", 0) + "", 1);
+        myRestClienMessager.Post("Damage", PlayerPrefs.GetInt("Damage2", 0) + "", 2);
+        myRestClienMessager.Post("Damage", PlayerPrefs.GetInt("Damage3", 0) + "", 3);
+        myRestClienMessager.Post("Damage", PlayerPrefs.GetInt("Damage4", 0) + "", 4);
         
-        myRestClienMessager.Post("Death", PlayerPrefs.GetInt("Zone1", 0) + "", 1);
-        myRestClienMessager.Post("Death", PlayerPrefs.GetInt("Zone2", 0) + "", 2);
-        myRestClienMessager.Post("Death", PlayerPrefs.GetInt("Zone3", 0) + "", 3);
-        myRestClienMessager.Post("Death", PlayerPrefs.GetInt("Zone4", 0) + "", 4);
+        myRestClienMessager.Post("Death", PlayerPrefs.GetInt("Death1", 0) + "", 1);
+        myRestClienMessager.Post("Death", PlayerPrefs.GetInt("Death2", 0) + "", 2);
+        myRestClienMessager.Post("Death", PlayerPrefs.GetInt("Death3", 0) + "", 3);
+        myRestClienMessager.Post("Death", PlayerPrefs.GetInt("Death4", 0) + "", 4);
+
+        myRestClienMessager.Post("Enemy", PlayerPrefs.GetInt("Enemy1", 0) + "", 1);
+        myRestClienMessager.Post("Enemy", PlayerPrefs.GetInt("Enemy2", 0) + "", 2);
+        myRestClienMessager.Post("Enemy", PlayerPrefs.GetInt("Enemy3", 0) + "", 3);
+        myRestClienMessager.Post("Enemy", PlayerPrefs.GetInt("Enemy4", 0) + "", 4);
+
+        myRestClienMessager.Post("FinishTime", "", 0);
+
+
 
 
     }

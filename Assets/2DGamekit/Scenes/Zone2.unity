@@ -3553,7 +3553,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6cbf73af5c52645258119d06d2fb7d07, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelDeath: Zone2s
+  levelDeath: Death2
 --- !u!1 &305131594
 GameObject:
   m_ObjectHideFlags: 0
@@ -20446,7 +20446,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 2.2164328, y: 1}
+    m_SensorSize: {x: 2.2946057, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -24924,6 +24924,11 @@ PrefabInstance:
         type: 3}
       propertyPath: viewDirection
       value: 19
+      objectReference: {fileID: 0}
+    - target: {fileID: 1607567206017760280, guid: 9a2f32836e0e10248b425c273622a735,
+        type: 3}
+      propertyPath: levelEnemy
+      value: Enemy2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9a2f32836e0e10248b425c273622a735, type: 3}
