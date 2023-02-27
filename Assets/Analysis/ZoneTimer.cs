@@ -14,7 +14,9 @@ public class ZoneTimer : MonoBehaviour
     void Start()
     {
        startTime = Time.time;
-       timeSpent = PlayerPrefs.GetFloat(zoneName, 0);
+       timeSpent = PlayerPrefs.GetFloat(zoneName, 0.0f);
+       Debug.Log("test: " + PlayerPrefs.GetFloat(zoneName, 0.0f));
+       Debug.Log("startTime" + ": "+ startTime.ToString("F2") + " seconds " + "timeSpent : " + timeSpent.ToString("F2") + "seconds.");
     }
 
     void Update()

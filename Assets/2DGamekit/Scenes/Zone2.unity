@@ -20348,6 +20348,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   inventoryChecks: []
+  keyGetting: {fileID: 0}
   OnButtonPress:
     m_PersistentCalls:
       m_Calls: []
@@ -20446,7 +20447,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 2.2946057, y: 1}
+    m_SensorSize: {x: 2.2908242, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -23534,6 +23535,7 @@ GameObject:
   - component: {fileID: 1706047231}
   - component: {fileID: 1706047236}
   - component: {fileID: 1706047237}
+  - component: {fileID: 1706047238}
   m_Layer: 0
   m_Name: Key
   m_TagString: Untagged
@@ -23802,6 +23804,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   inventoryChecks: []
+  keyGetting: {fileID: 0}
 --- !u!114 &1706047237
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23815,6 +23818,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levelKey: 2
+--- !u!114 &1706047238
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1706047229}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87e11cb800a7941678aa13581421b536, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1735260187
 PrefabInstance:
   m_ObjectHideFlags: 0
