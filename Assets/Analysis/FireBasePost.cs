@@ -12,6 +12,7 @@ public class FireBasePost : MonoBehaviour
     void Start()
     {
         myRestClienMessager = GetComponent<RestClientMessager>();
+        Post();
     }
 
     // Update is called once per frame
