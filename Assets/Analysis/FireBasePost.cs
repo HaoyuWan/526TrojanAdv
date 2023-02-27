@@ -46,6 +46,9 @@ public class FireBasePost : MonoBehaviour
         myRestClienMessager.Post("Enemy", PlayerPrefs.GetInt("Enemy3", 0) + "", 3);
         myRestClienMessager.Post("Enemy", PlayerPrefs.GetInt("Enemy4", 0) + "", 4);
 
+
+        
+
         myRestClienMessager.Post("FinishTime", "", 0);
 
 

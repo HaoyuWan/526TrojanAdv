@@ -12,6 +12,12 @@ namespace Gamekit2D
 
         protected Collider2D m_Collider;
 
+        public KeyGetting keyGetting;
+
+        void Start(){
+            keyGetting = GetComponent<KeyGetting>();
+        }
+
         void Reset()
         {
             layers = LayerMask.NameToLayer("Everything");
@@ -34,7 +40,11 @@ namespace Gamekit2D
         {
             if(!enabled)
                 return;
-        
+
+            if(keyGetting != null){
+                keyGetting.Post();
+            }
+            
             if (layers.Contains(other.gameObject))
             {
                 ExecuteOnExit(other);
