@@ -20,7 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/2DGamekit/Scenes/Zone4.unity
     guid: 5b0c2d9ddd151ba489db19a4fb634327
-  - enabled: 0
+  - enabled: 1
     path: Assets/2DGamekit/Scenes/Zone5.unity
     guid: 960b12f881940d84983273421bebc695
   - enabled: 0

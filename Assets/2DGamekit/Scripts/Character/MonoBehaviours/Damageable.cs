@@ -17,7 +17,10 @@ namespace Gamekit2D
         [Serializable]
         public class HealEvent : UnityEvent<int, Damageable>
         { }
-
+        
+        public EnemyKilled myKilled;
+        public DeathRecord myDeathRecord;
+        public DamageLevel myDamage;
         public int startingHealth = 5;
         public bool invulnerableAfterDamage = true;
         public float invulnerabilityDuration = 3f;
@@ -40,6 +43,12 @@ namespace Gamekit2D
         public int CurrentHealth
         {
             get { return m_CurrentHealth; }
+        }
+
+        void Start(){
+            myDamage = GetComponent<DamageLevel>();
+            myDeathRecord = GetComponent<DeathRecord>();
+            myKilled = GetComponent<EnemyKilled>();
         }
 
         void OnEnable()
@@ -96,6 +105,10 @@ namespace Gamekit2D
             //We still want the callback that we were hit, but not the damage to be removed from health.
             if (!m_Invulnerable)
             {
+                if(myDamage != null){
+                    myDamage.takeDamage(damager.damage);
+                }
+                
                 m_CurrentHealth -= damager.damage;
                 OnHealthSet.Invoke(this);
             }
@@ -106,6 +119,12 @@ namespace Gamekit2D
 
             if (m_CurrentHealth <= 0)
             {
+                if(myDeathRecord != null){
+                    myDeathRecord.takeDeath();
+                }
+                if(myKilled != null){
+                    myKilled.takeDeath();
+                }
                 OnDie.Invoke(damager, this);
                 m_ResetHealthOnSceneReload = true;
                 EnableInvulnerability();

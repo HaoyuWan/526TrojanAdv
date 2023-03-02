@@ -18,6 +18,15 @@ namespace Gamekit2D
 
         SpriteRenderer m_SpriteRenderer;
 
+        //public FireBasePost myPost;
+        //public RestClientMessager messager;
+
+        void Start(){
+
+            //myPost = GetComponent<FireBasePost>();
+            //messager =  GetComponent<RestClientMessager>();
+        }
+
         [ContextMenu("Update State")]
         void CheckInventory()
         {
@@ -33,9 +42,14 @@ namespace Gamekit2D
             {
                 keyDirectorTrigger.OverrideAlreadyTriggered (true);
                 m_SpriteRenderer.sprite = unlockStateSprites[stateIndex];
-                if (stateIndex == requiredInventoryItemKeys.Length - 1) onUnlocked.Invoke();
+                if (stateIndex == requiredInventoryItemKeys.Length - 1) {
+                    onUnlocked.Invoke();
+                    //messager.Post("test1", "test2");
+                    //myPost.Post();
+                };
             }
         }
+
 
         void OnEnable()
         {
