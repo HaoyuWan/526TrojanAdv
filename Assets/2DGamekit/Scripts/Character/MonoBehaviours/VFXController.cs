@@ -107,7 +107,12 @@ namespace Gamekit2D
         public static VFXController CreateDefault ()
         {
             VFXController controllerPrefab = Resources.Load<VFXController> ("VFXController");
-            instance = Instantiate (controllerPrefab);
+            try{
+                instance = Instantiate (controllerPrefab);
+            }catch{
+                
+            }
+            
             return instance;
         }
 
