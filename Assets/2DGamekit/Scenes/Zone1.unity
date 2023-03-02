@@ -29776,6 +29776,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levelDeath: Death1
+--- !u!114 &1141565049
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1141565045}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6743560dee5de9c4eb28b34557644179, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentKey: 0
+  Space: 0
 --- !u!1 &1160148792
 GameObject:
   m_ObjectHideFlags: 0
@@ -47335,6 +47349,7 @@ GameObject:
   - component: {fileID: 1952048118}
   - component: {fileID: 1952048117}
   - component: {fileID: 1952048116}
+  - component: {fileID: 1952048119}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
@@ -47392,6 +47407,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1952048119
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1952048115}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 918e5f0314aa49a468b55eb8ac70c57d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1956599855
 GameObject:
   m_ObjectHideFlags: 0
